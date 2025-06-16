@@ -17,7 +17,7 @@ public class Main {
         System.out.println("author2 = " + book2.getAuthor().getFirstName() + " " + book2.getAuthor().getLastName());
 
         book2.setPublishingBook(1818);
-        System.out.println("book1.getPublishingBook() = " + book2.getPublishingBook());
+        System.out.println("book2.getPublishingBook() = " + book2.getPublishingBook());
 
     }
 }
