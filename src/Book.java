@@ -26,4 +26,9 @@ public class Book {
     public Author getAuthor() {
         return author;
     }
+
+    @Override
+    public String toString() {
+        return "Книга: " + nameBook + " , " + author.toString();
+    }
 }

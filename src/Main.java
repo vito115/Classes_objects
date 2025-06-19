@@ -19,5 +19,19 @@ public class Main {
         book2.setPublishingBook(1818);
         System.out.println("book2.getPublishingBook() = " + book2.getPublishingBook());
 
+        // Проверка toString()
+        System.out.println(book1);
+        System.out.println(book2);
+
+        // Проверка equals
+        System.out.println("Имена авторов равны: " + author1.equals(author2));
+        boolean areEqual = author1.getFirstName().equals(book1.getAuthor().getFirstName());
+        System.out.println("Имена авторов равны: " + areEqual);
+        boolean areEqual2 = author1.getFirstName().equals(book2.getAuthor().getFirstName());
+        System.out.println("Имена авторов равны: " + areEqual2);
+
+        // Проверка hashCode
+        System.out.println(author1.hashCode() == book1.getAuthor().hashCode());
+        System.out.println(author1.hashCode() == book2.getAuthor().hashCode());
     }
 }
