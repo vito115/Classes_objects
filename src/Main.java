@@ -30,8 +30,15 @@ public class Main {
         boolean areEqual2 = author1.getFirstName().equals(book2.getAuthor().getFirstName());
         System.out.println("Имена авторов равны: " + areEqual2);
 
+        System.out.println("Названия книг равны: " + book1.equals(book2));
+        Book book3 = new Book("Dracula", 1897, author1);
+        System.out.println("Названия книг равны: " + book1.equals(book3));
+
         // Проверка hashCode
         System.out.println(author1.hashCode() == book1.getAuthor().hashCode());
         System.out.println(author1.hashCode() == book2.getAuthor().hashCode());
+
+        System.out.println(book1.hashCode() == book2.hashCode());
+        System.out.println(book1.hashCode() == book3.hashCode());
     }
 }
